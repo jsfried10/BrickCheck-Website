@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>BrickCheck</title>
+        <item>
+            <title>1.1</title>
+            <pubDate>Fri, 13 Feb 2026 22:25:58 -0800</pubDate>
+            <sparkle:version>1</sparkle:version>
+            <sparkle:shortVersionString>1.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://jsfried10.github.io/BrickCheck-Website/updates/BrickCheck.zip" length="1659176" type="application/octet-stream" sparkle:edSignature="Q4v0Ot1ihfXG0OPYY/nbbRJKMHu+BShCQHO0G/8cc71JqQdxvGyf+s6fQ63OlkqDwlCHGs7/E34w2jE4w1HBDg=="/>
+        </item>
+    </channel>
+</rss>
