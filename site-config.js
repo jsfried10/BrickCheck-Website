@@ -11,7 +11,7 @@ const SITE = {
   // ── Global ──────────────────────────────────
   name: "BrickChecker",
   tagline: "LEGO Price Tracker for Mac",
-  downloadUrl: "https://github.com/jsfried10/LegoApp/releases/latest/download/BrickCheck.dmg",
+  downloadUrl: "https://github.com/jsfried10/LegoApp/releases/latest/download/BrickCheck.zip",
   githubUrl: "https://github.com/jsfried10/LegoApp",
   year: "2025",
 
