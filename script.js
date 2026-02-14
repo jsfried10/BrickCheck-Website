@@ -13,9 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   // ── Helper: image or placeholder ──
-  function imageHTML(src, alt) {
+  function imageHTML(src, alt, lazy = false) {
     if (src) {
-      return `<img src="${src}" alt="${alt}">`;
+      const loading = lazy ? ' loading="lazy"' : '';
+      return `<img src="${src}" alt="${alt}" width="800" height="500"${loading}>`;
     }
     return `<div class="placeholder-img" data-label="${alt}"></div>`;
   }
@@ -56,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <p class="fade-up">${f.description}</p>
         </div>
         ${f.hideImage ? '' : `<div class="feature-image fade-up">
-          ${imageHTML(f.image, f.imageAlt)}
+          ${imageHTML(f.image, f.imageAlt, true)}
         </div>`}
       </div>
     </div>
