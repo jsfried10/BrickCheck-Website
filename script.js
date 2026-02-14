@@ -116,6 +116,19 @@ document.addEventListener('DOMContentLoaded', () => {
     header.classList.toggle('scrolled', window.scrollY > 10);
   }, { passive: true });
 
+  // --- Track download clicks in Google Analytics ---
+  document.querySelectorAll(`a[href="${SITE.downloadUrl}"]`).forEach(link => {
+    link.addEventListener('click', () => {
+      if (typeof gtag === 'function') {
+        gtag('event', 'download', {
+          event_category: 'App',
+          event_label: link.textContent.trim(),
+          value: 1
+        });
+      }
+    });
+  });
+
   // --- Smooth scroll for anchor links ---
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', (e) => {
