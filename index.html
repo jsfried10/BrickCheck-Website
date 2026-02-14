@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrickCheck — LEGO Price Tracker for Mac</title>
+  <meta name="description" content="Track LEGO set prices across retailers from your Mac menu bar. Sync your wishlist, compare prices, get notified when they drop.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="BrickCheck — LEGO Price Tracker for Mac">
+  <meta property="og:description" content="Track LEGO set prices across retailers from your Mac menu bar.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ======== Header ======== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="#" class="logo">
+        <svg class="logo-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="32" height="32" rx="8" fill="#E3000B"/>
+          <circle cx="11" cy="11" r="3.5" fill="white" fill-opacity="0.3"/>
+          <circle cx="21" cy="11" r="3.5" fill="white" fill-opacity="0.3"/>
+          <circle cx="11" cy="21" r="3.5" fill="white" fill-opacity="0.3"/>
+          <circle cx="21" cy="21" r="3.5" fill="white" fill-opacity="0.3"/>
+          <text x="16" y="21" text-anchor="middle" font-family="Nunito, sans-serif" font-weight="900" font-size="14" fill="white">B</text>
+        </svg>
+        <span id="header-name"></span>
+      </a>
+      <a id="header-download" href="#" class="btn btn-primary btn-sm"></a>
+    </div>
+  </header>
+
+  <!-- ======== Hero ======== -->
+  <section class="hero">
+    <div class="container">
+      <h1 id="hero-headline" class="fade-up"></h1>
+      <p id="hero-subtitle" class="hero-subtitle fade-up"></p>
+      <div class="hero-ctas fade-up">
+        <a id="hero-primary-cta" href="#" class="btn btn-primary btn-large"></a>
+        <a id="hero-secondary-cta" href="#features" class="btn btn-secondary btn-large"></a>
+      </div>
+      <div class="hero-image fade-up">
+        <div id="hero-image-container"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== Trust Strip ======== -->
+  <section class="trust-strip">
+    <div id="trust-strip-container" class="container"></div>
+  </section>
+
+  <!-- ======== Features ======== -->
+  <section id="features"></section>
+
+  <!-- ======== How It Works ======== -->
+  <section class="how-it-works">
+    <div class="container">
+      <h2 id="how-headline" class="section-title fade-up"></h2>
+      <div id="steps-container" class="steps-grid"></div>
+    </div>
+  </section>
+
+  <!-- ======== Final CTA ======== -->
+  <section class="final-cta">
+    <div class="container">
+      <h2 id="cta-headline" class="fade-up"></h2>
+      <p id="cta-subtitle" class="fade-up"></p>
+      <a id="cta-button" href="#" class="btn btn-white btn-large fade-up"></a>
+      <small id="cta-footnote" class="fade-up"></small>
+    </div>
+  </section>
+
+  <!-- ======== Footer ======== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p id="footer-copy"></p>
+      <nav id="footer-links" class="footer-links"></nav>
+    </div>
+  </footer>
+
+  <!-- Config first, then script -->
+  <script src="site-config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
