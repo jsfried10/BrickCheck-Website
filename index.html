@@ -3,13 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BrickCheck — LEGO Price Tracker for Mac</title>
-  <meta name="description" content="Track LEGO set prices across retailers from your Mac menu bar. Sync your wishlist, compare prices, get notified when they drop.">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PGW0G97BBK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PGW0G97BBK');
+  </script>
+  <title>BrickChecker — LEGO Price Tracker for Mac</title>
+  <meta name="description" content="Track LEGO set prices across retailers from your Mac menu bar. Sync your LEGO.com wishlist, compare prices on Amazon and Target, and get notified when they drop. Free download.">
+  <meta name="keywords" content="LEGO, LEGO price tracker, LEGO deals, LEGO price drop, LEGO wishlist, BrickChecker, Mac app, menu bar app, Amazon LEGO, Target LEGO, LEGO set prices, brick deals">
+  <meta name="author" content="BrickChecker">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://jsfried10.github.io/BrickChecker-Website/">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="BrickCheck — LEGO Price Tracker for Mac">
-  <meta property="og:description" content="Track LEGO set prices across retailers from your Mac menu bar.">
+  <meta property="og:title" content="BrickChecker — Never Overpay for LEGO Again">
+  <meta property="og:description" content="Track LEGO set prices across Amazon, Target, and more from your Mac menu bar. Sync your wishlist and get instant price drop alerts.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jsfried10.github.io/BrickChecker-Website/">
+  <meta property="og:image" content="https://jsfried10.github.io/BrickChecker-Website/assets/images/appicon.svg">
+  <meta property="og:site_name" content="BrickChecker">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BrickChecker — Never Overpay for LEGO Again">
+  <meta name="twitter:description" content="Track LEGO set prices across retailers from your Mac menu bar. Free download.">
+  <meta name="twitter:image" content="https://jsfried10.github.io/BrickChecker-Website/assets/images/appicon.svg">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "BrickChecker",
+    "operatingSystem": "macOS",
+    "applicationCategory": "UtilitiesApplication",
+    "description": "Track LEGO set prices across retailers from your Mac menu bar. Sync your LEGO.com wishlist and get notified when prices drop.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "downloadUrl": "https://github.com/jsfried10/LegoApp/releases/latest/download/BrickCheck.dmg",
+    "softwareVersion": "1.0.0",
+    "image": "https://jsfried10.github.io/BrickChecker-Website/assets/images/appicon.svg"
+  }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/appicon.svg">
+  <link rel="apple-touch-icon" href="assets/images/appicon.svg">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,14 +108,6 @@
 
   <!-- ======== Features ======== -->
   <section id="features"></section>
-
-  <!-- ======== How It Works ======== -->
-  <section class="how-it-works">
-    <div class="container">
-      <h2 id="how-headline" class="section-title fade-up"></h2>
-      <div id="steps-container" class="steps-grid"></div>
-    </div>
-  </section>
 
   <!-- ======== Final CTA ======== -->
   <section class="final-cta">
