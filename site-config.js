@@ -9,9 +9,9 @@
 const SITE = {
 
   // ── Global ──────────────────────────────────
-  name: "BrickCheck",
+  name: "BrickChecker",
   tagline: "LEGO Price Tracker for Mac",
-  downloadUrl: "https://github.com/jsfried10/LegoApp/releases/download/v1.0.0/BrickCheck.dmg",
+  downloadUrl: "https://github.com/jsfried10/LegoApp/releases/latest/download/BrickCheck.dmg",
   githubUrl: "https://github.com/jsfried10/LegoApp",
   year: "2025",
 
@@ -23,19 +23,17 @@ const SITE = {
   // ── Hero ────────────────────────────────────
   hero: {
     headline: "Never overpay for LEGO again.",
-    subtitle: "BrickCheck lives in your menu bar, tracking prices across Amazon, Target, and more. Sync your LEGO.com wishlist and get notified the instant prices drop.",
+    subtitle: "BrickChecker lives in your Mac menu bar, tracking prices across Amazon, Target, and more. Sync your LEGO.com wishlist or add a set. Then get notified the instant prices drop.",
     primaryCta: "Download Free",
     secondaryCta: "See How It Works",
-    // Replace with a real screenshot path, e.g. "assets/images/hero-screenshot.png"
-    image: null,
-    imageAlt: "BrickCheck menu bar app showing LEGO set prices",
+    image: "assets/images/App.png",
+    imageAlt: "BrickChecker menu bar app showing LEGO set prices",
   },
 
   // ── Trust Strip ─────────────────────────────
   trustItems: [
-    { icon: "store",     label: "2+ Retailers" },
+    { icon: "store",     label: "Multiple Retailers" },
     { icon: "sync",      label: "Wishlist Sync" },
-    { icon: "clock",     label: "Background Checks" },
     { icon: "bell",      label: "Instant Alerts" },
   ],
 
@@ -44,44 +42,28 @@ const SITE = {
   features: [
     {
       badge: "Wishlist Sync",
-      badgeColor: "yellow",
+      badgeColor: "blue",
       headline: "Your wishlist, always up to date.",
-      description: "Connect your LEGO.com wishlist and BrickCheck automatically syncs it in the background. New sets you add appear instantly — no manual entry needed.",
-      // Replace with real path, e.g. "assets/images/feature-wishlist.png"
-      image: null,
-      imageAlt: "LEGO.com wishlist synced into BrickCheck",
+      description: "Connect your LEGO.com wishlist and BrickChecker automatically syncs it in the background. New sets you add appear instantly — no manual entry needed.",
+      image: "assets/images/Wish.png",
+      imageAlt: "LEGO.com wishlist synced into BrickChecker",
     },
     {
       badge: "Price Tracking",
       badgeColor: "red",
       headline: "Every retailer. One glance.",
       description: "Compare prices across Amazon, Target, and more for every set in your collection. See exactly where to buy for the best deal, right from your menu bar.",
-      image: null,
+      image: "assets/images/Prices.png",
       imageAlt: "Price comparison across multiple retailers",
     },
     {
       badge: "Alerts",
       badgeColor: "blue",
       headline: "Never miss a deal.",
-      description: "Set custom price thresholds for any set. BrickCheck watches prices in the background and sends a Mac notification the moment a set drops below your target.",
+      description: "Set custom price thresholds for any set. BrickChecker watches prices in the background and sends a Mac notification the moment a set drops below your target.",
       image: null,
       imageAlt: "Mac notification for a LEGO price drop",
-    },
-    {
-      badge: "Organization",
-      badgeColor: "green",
-      headline: "Your collection, your way.",
-      description: "Sort your tracked sets by date added, discount percentage, or alphabetically. Quickly find the sets with the biggest savings or the ones you added most recently.",
-      image: null,
-      imageAlt: "Sortable set list with discount percentages",
-    },
-    {
-      badge: "Scheduling",
-      badgeColor: "orange",
-      headline: "Set it and forget it.",
-      description: "Configure how often BrickCheck checks prices — from every 5 minutes to every 6 hours. It runs quietly in your menu bar, using minimal resources while keeping prices fresh.",
-      image: null,
-      imageAlt: "Background scheduling settings panel",
+      hideImage: true,
     },
   ],
 
@@ -91,7 +73,7 @@ const SITE = {
     steps: [
       {
         title: "Download & Install",
-        description: "Drag BrickCheck to your Applications folder. It lives in your menu bar, ready when you are.",
+        description: "Drag BrickChecker to your Applications folder. It lives in your menu bar, ready when you are.",
       },
       {
         title: "Sync Your Wishlist",
@@ -99,7 +81,7 @@ const SITE = {
       },
       {
         title: "Get Price Alerts",
-        description: "BrickCheck monitors prices in the background and notifies you when they drop.",
+        description: "BrickChecker monitors prices in the background and notifies you when they drop.",
       },
     ],
   },
@@ -107,7 +89,7 @@ const SITE = {
   // ── Final CTA ───────────────────────────────
   finalCta: {
     headline: "Start saving on LEGO sets today.",
-    subtitle: "BrickCheck is free to download. No account required.",
+    subtitle: "BrickChecker is free to download. No account required.",
     buttonText: "Download for Mac",
     footnote: "Requires Mac 14 or later",
   },

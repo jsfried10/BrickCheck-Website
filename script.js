@@ -1,5 +1,5 @@
 /* ============================================
-   BrickCheck — Populates page from SITE config
+   BrickChecker — Populates page from SITE config
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -49,30 +49,32 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── Features ──
   const featuresSection = document.getElementById('features');
   featuresSection.innerHTML = SITE.features.map((f, i) => `
-    <div class="feature${i % 2 === 1 ? ' feature--reversed' : ''}">
-      <div class="container feature-grid">
+    <div class="feature${i % 2 === 1 ? ' feature--reversed' : ''}${f.hideImage ? ' feature--text-only' : ''}">
+      <div class="container ${f.hideImage ? '' : 'feature-grid'}">
         <div class="feature-text">
-          <span class="badge badge-${f.badgeColor} fade-up">${f.badge}</span>
           <h2 class="fade-up">${f.headline}</h2>
           <p class="fade-up">${f.description}</p>
         </div>
-        <div class="feature-image fade-up">
+        ${f.hideImage ? '' : `<div class="feature-image fade-up">
           ${imageHTML(f.image, f.imageAlt)}
-        </div>
+        </div>`}
       </div>
     </div>
   `).join('');
 
-  // ── How It Works ──
-  document.getElementById('how-headline').textContent = SITE.howItWorks.headline;
+  // ── How It Works (optional section) ──
+  const howHeadline = document.getElementById('how-headline');
   const stepsContainer = document.getElementById('steps-container');
-  stepsContainer.innerHTML = SITE.howItWorks.steps.map((step, i) => `
-    <div class="step fade-up">
-      <div class="step-number">${i + 1}</div>
-      <h3>${step.title}</h3>
-      <p>${step.description}</p>
-    </div>
-  `).join('');
+  if (howHeadline && stepsContainer) {
+    howHeadline.textContent = SITE.howItWorks.headline;
+    stepsContainer.innerHTML = SITE.howItWorks.steps.map((step, i) => `
+      <div class="step fade-up">
+        <div class="step-number">${i + 1}</div>
+        <h3>${step.title}</h3>
+        <p>${step.description}</p>
+      </div>
+    `).join('');
+  }
 
   // ── Final CTA ──
   document.getElementById('cta-headline').textContent = SITE.finalCta.headline;

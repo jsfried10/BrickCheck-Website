@@ -203,11 +203,17 @@ h3 {
 .badge-green  { background: #D1FAE5; color: #166534; }
 .badge-orange { background: #FFF0DB; color: #9A5B13; }
 
-/* --- Placeholder Images --- */
+/* --- Images --- */
+.hero-image img,
+.feature-image img {
+  border-radius: 10px;
+  box-shadow: var(--shadow-md);
+}
+
 .placeholder-img {
   aspect-ratio: 16 / 10;
   background: linear-gradient(135deg, var(--gray-100), var(--gray-200));
-  border-radius: var(--radius-md);
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -387,6 +393,16 @@ h3 {
 
 .feature--reversed .feature-grid > * {
   direction: ltr;
+}
+
+.feature--text-only .feature-text {
+  text-align: center;
+  max-width: 640px;
+  margin-inline: auto;
+}
+
+.feature--text-only .feature-text p {
+  max-width: 100%;
 }
 
 .feature-text .badge {
