@@ -98,8 +98,7 @@ const SITE = {
   footer: {
     links: [
       { label: "GitHub",  url: "https://github.com/jsfried10/LegoApp" },
-      { label: "Privacy", url: "#" },
-      { label: "Contact", url: "#" },
+      { label: "Privacy", url: "privacy.html" },
     ],
   },
 };
