@@ -23,7 +23,7 @@ const SITE = {
   // ── Hero ────────────────────────────────────
   hero: {
     headline: "Never overpay for LEGO again.",
-    subtitle: "BrickChecker lives in your Mac menu bar, tracking prices across Amazon, Target, and more. Sync your LEGO.com wishlist or add a set. Then get notified the instant prices drop.",
+    subtitle: "Impact-Site-Verification: a58264b9-3334-432b-8e91-2bda3f08a3a0 BrickChecker lives in your Mac menu bar, tracking prices across Amazon, Target, and more. Sync your LEGO.com wishlist or add a set. Then get notified the instant prices drop.",
     primaryCta: "Download Free",
     secondaryCta: "See How It Works",
     image: "assets/images/App.png",
