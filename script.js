@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     sync: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48 2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48 2.83-2.83"/></svg>',
     clock: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>',
     bell: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>',
+    cloud: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>',
   };
 
   // ── Helper: image or placeholder ──
@@ -36,7 +37,17 @@ document.addEventListener('DOMContentLoaded', () => {
   heroPrimary.href = SITE.downloadUrl;
 
   document.getElementById('hero-secondary-cta').textContent = SITE.hero.secondaryCta;
-  document.getElementById('hero-image-container').innerHTML = imageHTML(SITE.hero.image, SITE.hero.imageAlt);
+  // Dual hero images (Mac + iPhone side by side) or single image
+  const heroContainer = document.getElementById('hero-image-container');
+  if (SITE.hero.image2) {
+    heroContainer.classList.add('hero-image--dual');
+    heroContainer.innerHTML = `
+      <img src="${SITE.hero.image2}" alt="${SITE.hero.image2Alt}" class="hero-img-secondary">
+      <img src="${SITE.hero.image}" alt="${SITE.hero.imageAlt}" class="hero-img-primary">
+    `;
+  } else {
+    heroContainer.innerHTML = imageHTML(SITE.hero.image, SITE.hero.imageAlt);
+  }
 
   // ── Trust Strip ──
   const trustContainer = document.getElementById('trust-strip-container');

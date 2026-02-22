@@ -333,6 +333,30 @@ h3 {
   box-shadow: var(--shadow-lg);
 }
 
+/* Dual hero images — simple gallery */
+.hero-image:has(.hero-image--dual) {
+  max-width: 960px;
+}
+
+.hero-image--dual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.hero-image--dual img {
+  border-radius: 10px;
+  box-shadow: var(--shadow-lg);
+  height: auto;
+}
+
+.hero-img-primary,
+.hero-img-secondary {
+  flex: 1;
+  min-width: 0;
+}
+
 /* ============================================
    TRUST STRIP
    ============================================ */
@@ -644,6 +668,10 @@ h3 {
   .hero-ctas {
     flex-direction: column;
     align-items: center;
+  }
+
+  .hero-image--dual {
+    gap: var(--space-md);
   }
 
   .site-footer .container {

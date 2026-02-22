@@ -10,24 +10,26 @@ const SITE = {
 
   // ── Global ──────────────────────────────────
   name: "BrickChecker",
-  tagline: "LEGO Price Tracker for Mac",
-  downloadUrl: "https://jsfried10.github.io/BrickCheck-Website/updates/BrickCheck.zip",
+  tagline: "LEGO Price Tracker for Mac, iPhone & iPad",
+  downloadUrl: "https://apps.apple.com/us/app/brickchecker/id6759080866?mt=12",
   githubUrl: "https://github.com/jsfried10/LegoApp",
   year: "2026",
 
   // ── Header ──────────────────────────────────
   header: {
-    buttonText: "Download for Mac",
+    buttonText: "Download for iOS and Mac",
   },
 
   // ── Hero ────────────────────────────────────
   hero: {
     headline: "Never overpay for LEGO again.",
-    subtitle: "BrickChecker lives in your Mac menu bar, tracking prices across Amazon, Target, and more. Sync your LEGO.com wishlist or add a set. Then get notified the instant prices drop.",
-    primaryCta: "Download Free",
+    subtitle: "BrickChecker tracks LEGO prices across Amazon, Target, and more on your Mac, iPhone, and iPad. Sync your LEGO.com wishlist, compare prices, and get notified the instant they drop — with iCloud keeping everything up to date across all your devices.",
+    primaryCta: "Download for iOS and Mac",
     secondaryCta: "See How It Works",
-    image: "assets/images/App.png",
-    imageAlt: "BrickChecker menu bar app showing LEGO set prices",
+    image: "assets/images/Mac.png",
+    imageAlt: "BrickChecker Mac app showing LEGO set prices",
+    image2: "assets/images/Iphone.png",
+    image2Alt: "BrickChecker iPhone app showing LEGO set prices",
   },
 
   // ── Trust Strip ─────────────────────────────
@@ -35,6 +37,7 @@ const SITE = {
     { icon: "store",     label: "Multiple Retailers" },
     { icon: "sync",      label: "Wishlist Sync" },
     { icon: "bell",      label: "Instant Alerts" },
+    { icon: "cloud",     label: "iCloud Sync" },
   ],
 
   // ── Features ────────────────────────────────
@@ -45,24 +48,24 @@ const SITE = {
       badgeColor: "blue",
       headline: "Your wishlist, always up to date.",
       description: "Connect your LEGO.com wishlist and BrickChecker automatically syncs it in the background. New sets you add appear instantly — no manual entry needed.",
-      image: "assets/images/Wish.png",
-      imageAlt: "LEGO.com wishlist synced into BrickChecker",
+      image: "assets/images/sync.png",
+      imageAlt: "Wishlist sync across Mac and iPhone",
     },
     {
       badge: "Price Tracking",
       badgeColor: "red",
       headline: "Every retailer. One glance.",
       description: "Compare prices across Amazon, Target, and more for every set in your collection. See exactly where to buy for the best deal, right from your menu bar.",
-      image: "assets/images/Prices.png",
-      imageAlt: "Price comparison across multiple retailers",
+      image: "assets/images/Main.png",
+      imageAlt: "LEGO set price tracking with retailer comparison",
     },
     {
-      badge: "Alerts",
+      badge: "Alerts & Sync",
       badgeColor: "blue",
-      headline: "Never miss a deal.",
-      description: "Set custom price thresholds for any set. BrickChecker watches prices in the background and sends a Mac notification the moment a set drops below your target.",
+      headline: "Never miss a deal — on any device.",
+      description: "Set custom price thresholds for any set and get notified the moment prices drop. Your tracked sets, price history, and settings sync automatically via iCloud across your Mac, iPhone, and iPad.",
       image: null,
-      imageAlt: "Mac notification for a LEGO price drop",
+      imageAlt: "Price alerts and iCloud sync across devices",
       hideImage: true,
     },
   ],
@@ -89,9 +92,9 @@ const SITE = {
   // ── Final CTA ───────────────────────────────
   finalCta: {
     headline: "Start saving on LEGO sets today.",
-    subtitle: "BrickChecker is free to download. No account required.",
-    buttonText: "Download for Mac",
-    footnote: "Requires Mac 14 or later",
+    subtitle: "Free on the App Store. Available on Mac, iPhone, and iPad.",
+    buttonText: "Get BrickChecker",
+    footnote: "Requires macOS 14 or iOS 17 or later",
   },
 
   // ── Footer ──────────────────────────────────
